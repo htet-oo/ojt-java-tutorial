@@ -11,7 +11,7 @@ public class TutorialTwoA {
 		while (loop.equals("y")) {
 			System.out.print("Enter Number :" + "\t");
 			int number = scanner.nextInt();
-			if (number % 2 == 0) {
+			if (number % 2 == 0 && number > 0) {
 				result = "positive";
 			} else {
 				result = "negative";
