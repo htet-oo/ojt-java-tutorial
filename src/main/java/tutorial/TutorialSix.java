@@ -13,7 +13,7 @@ public class TutorialSix {
 		while(loop.equals("y")) {
 			System.out.print("Please Enter Your Password : ");
 			password = scanner.next();
-			if(passwordChecking(password) == true) {
+			if(isPasswordStrong(password) == true) {
 				System.out.println("Your password is strong");
 			}else {
 				System.out.println("Your password is week");
@@ -24,7 +24,7 @@ public class TutorialSix {
 		}
 	}
 
-    public static boolean passwordChecking(String password) {
+    public static boolean isPasswordStrong(String password) {
         if (password.length() <= 8) {
             return false;
         }
@@ -46,4 +46,3 @@ public class TutorialSix {
         return true;
     }
 }
-
